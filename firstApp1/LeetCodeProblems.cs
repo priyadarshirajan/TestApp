@@ -24,7 +24,7 @@ namespace firstApp1
             return last.Length;
         }
 
-        public static int ScoreOfString(string s = "hello")
+        public static int ScoreOfString(string s)
         {
             int total = 0;
             for (int i = 0; i < s.Length - 1; i++)

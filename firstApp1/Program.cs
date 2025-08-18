@@ -10,7 +10,7 @@ namespace firstApp1
     {
         static void Main(string[] args)
         {
-            var res = LeetCodeProblems.ScoreOfString();
+            var res = LeetCodeProblems.ScoreOfString("hello");
             Console.ReadKey();
         }
     }

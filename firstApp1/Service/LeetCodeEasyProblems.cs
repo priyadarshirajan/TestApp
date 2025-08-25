@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace firstApp1
 {
-    internal static  class LeetCodeProblems
+    internal static  class LeetCodeEasyProblems
     {
         public static int Divide(int dividend, int divisor)
         {

@@ -6,7 +6,7 @@ namespace firstApp1.Service
 {
     public class RedisService
     {
-        private readonly ConnectionMultiplexer _redis = ConnectionMultiplexer.Connect("localhost:6379");;
+        private readonly ConnectionMultiplexer _redis = ConnectionMultiplexer.Connect("localhost:6379");
 
         public  async Task Set(string key, string value)
         {

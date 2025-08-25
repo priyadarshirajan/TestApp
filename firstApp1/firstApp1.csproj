@@ -85,17 +85,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LeetCodeProblems.cs" />
-    <Compile Include="LongestCommonPrefix.cs" />
-    <Compile Include="Palindrome.cs" />
+    <Compile Include="Service\LeetCodeEasyProblems.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoveDuplicates.cs" />
-    <Compile Include="RomanToInt.cs" />
-    <Compile Include="SecondHighest.cs" />
     <Compile Include="Service\RedisService.cs" />
-    <Compile Include="TwoSum.cs" />
-    <Compile Include="ValidParentheses.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace firstApp1
@@ -174,11 +176,59 @@ namespace firstApp1
             return result;
         }
 
+        public static string AddBinary(string a, string b)
+        {
+            int i = a.Length - 1, j = b.Length - 1, carry = 0;
+            string result = "";
 
+            while (i >= 0 || j >= 0 || carry > 0)
+            {
+                int sum = carry;
+                if (i >= 0)
+                {
+                    sum += a[i--] - '0';
+                }
 
+                if (j >= 0)
+                {
+                    sum += b[j--] - '0';
+                }
 
+                result = (sum % 2) + result;
 
+                carry = sum / 2;
+            }
 
+            return result;
+        }
+
+        public static bool IsPalindrome(string s= "a")
+        {
+            var charList = new List<char>() { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x','y','z',
+            '0','1','2','3','4','5','6','7','8','9',};
+
+            string s1 = "";
+            foreach (char c in s)
+            {
+                if(charList.Contains(char.ToLower(c)))
+                {
+                    s1 += char.ToLower(c);
+                }
+            }
+
+            if(s1.Length == 1)
+            {
+                return false;
+            }
+
+            string s2 = "";
+            for (int i = s1.Length - 1; i >= 0; i--)
+            {
+                s2 += s1[i];
+            }
+
+            return s1 == s2;
+        }
 
 
 

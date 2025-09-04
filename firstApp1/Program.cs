@@ -13,7 +13,7 @@ namespace firstApp1
 
 
 
-            //LeetCodeEasyProblems.SingleNumber(new int[] {2,2,1});
+            var res = LeetCodeEasyProblems.IsPalindrome();
 
             //var t = new AdoNetService();
             //t.Execute();
